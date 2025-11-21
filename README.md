@@ -1,2 +1,35 @@
-# Learning-Archive
-Projetos feito com professores(a)
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Porjetos Learning-Archive</title>
+</head>
+<body>
+    <header>
+        <h1>🌟 Bem-vindo ao Meu Hub de Estudos e Projetos</h1>
+        <nav>
+
+        </nav>
+    </header>
+    <main>
+        <section id="sobre">
+            <h2>Olá 👋</h2>
+            <p>
+                Seja bem-vindo ao meu repositório de projetos e aprendizado. Aqui você encontra todos os trabalhos desenvolvidos com foco em aprimoramento contínuo.
+            </p>
+        </section>
+        <section id="navegacao">
+            <h2>
+                Navegue por Categoria:
+            </h2>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 - Desenvolvido por Hothon Dafnne</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
