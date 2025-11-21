@@ -38,6 +38,9 @@ main{
 h1{
     color: var(--cor-texto-claro);
 }
+p{
+    color: var(--cor-texto-claro);
+}
 h2{
     color: var(--cor-aurora--verde);
     border-bottom:  2px solid var(--cor-destaque-claro);
@@ -66,4 +69,50 @@ h2{
 .botao:hover {
     background-color: var(--cor-aurora--verde);
     color: var(--cor-destaque-claro);
+}
+.botao-nav{
+    text-decoration: none;
+    color: var(--cor-texto-claro);
+    border: 1px solid var(--cor-destaque-claro);
+    padding: 8px 15px;
+    transition: background-color 0.3s;
+    font-size: inline-block;
+    margin-top: 10px;
+}
+.botao-nav:hover{
+    background-color: var(--cor-aurora-azul);
+}
+.lista-projetos{
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+}
+.lista-projetos li{
+    background-color: #283344;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-left: 5px solid var(--cor-aurora--verde);
+    transition: transform 0.3s ease;
+}
+.lista-projetos li:hover{
+    transform: scale(1.02);
+    border-left-color: var(--cor-aurora--roxo);
+}
+.lista-projetos h3 a{
+    color: var(--cor-texto-claro);
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+    margin-bottom: 5px;
+}
+.lista-projetos h3 a:hover{
+    color: var(--cor-aurora--verde);
+    text-decoration: underline;
+}
+.lista-projetos p {
+    color: var(--cor-destaque-claro);
+    font-size: 0.9em;
 }
