@@ -232,18 +232,32 @@ footer a{
 footer a:hover{
   color: var(--texto-inverso);
 }
-@media screen and (min-width: 768px){
-  #skill-container{
+
+@media screen and (min-width: 768px) {
+  main {
+    grid-template-columns: auto 300px 1fr auto;
+  }
+
+  section#ficha {
+    grid-column: 2 / 3;
+    height: fit-content;
+    position: sticky;
+    top: 60px;
+  }
+  section#detalhes {
+    grid-column: 3 / 4;
+  }
+  #skill-container {
     grid-template-columns: 1fr 1fr;
   }
-  #projeto-container .projeto{
+  #projeto-container .projeto {
     flex-direction: row-reverse;
     justify-content: space-between;
   }
   #projeto-container .projeto-info{
     max-width: 80%;
   }
-  #projeto-container .foto{
+  #projeto-container .foto {
     aspect-ratio: 1/1;
     max-width: 20%;
     max-height: 200px;
