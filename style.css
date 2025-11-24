@@ -1,6 +1,6 @@
 :root{
-    --cor-aurora--verde:#60B79C;
-    --cor-aurora--roxo:#774C6F;
+    --cor-aurora-verde:#60B79C;
+    --cor-aurora-roxo:#774C6F;
     --cor-aurora-azul:#3C5A8A;
 
     /*Tons Nórdicos*/
@@ -18,7 +18,7 @@ body{
     background-color:var(--cor-fundo-escuro);
     margin: 0;
     padding: 0;
-    font-family: var(--fonte-principal)
+    font-family: var(--fonte-principal);
     color: var(--cor-texto-claro);
     text-align: center;
 }
@@ -26,7 +26,6 @@ body{
 header {
     background-color: var(--cor-aurora-azul);
     color: var(--cor-texto-claro);
-    color: white;
     padding: 20px;
     box-shadow: 0 4px 6px rgb(0, 0, 0, 0.3);
 }
@@ -42,7 +41,7 @@ p{
     color: var(--cor-texto-claro);
 }
 h2{
-    color: var(--cor-aurora--verde);
+    color: var(--cor-aurora-verde);
     border-bottom:  2px solid var(--cor-destaque-claro);
     padding-bottom: 10px;
     margin-top: 30px;
@@ -51,12 +50,12 @@ h2{
     display: flex;
     gap: 20px;
     justify-content: center;
-    flex-grow: wrap;
+    flex-wrap: wrap;
 }
 
 .botao{
     text-decoration: none;
-    background-color: var(--cor-aurora--roxo);
+    background-color: var(--cor-aurora-roxo);
     color: var(--cor-texto-claro);
     padding: 15px 30px;
     border-radius: 8px;
@@ -67,7 +66,7 @@ h2{
     max-width: 300px;
 }
 .botao:hover {
-    background-color: var(--cor-aurora--verde);
+    background-color: var(--cor-aurora-verde);
     color: var(--cor-destaque-claro);
 }
 .botao-nav{
@@ -75,8 +74,10 @@ h2{
     color: var(--cor-texto-claro);
     border: 1px solid var(--cor-destaque-claro);
     padding: 8px 15px;
+    border-radius: 5px;
     transition: background-color 0.3s;
-    font-size: inline-block;
+    font-size: 0.9em;
+    display: inline-block;
     margin-top: 10px;
 }
 .botao-nav:hover{
@@ -94,12 +95,12 @@ h2{
     margin-bottom: 20px;
     text-align: left;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    border-left: 5px solid var(--cor-aurora--verde);
+    border-left: 5px solid var(--cor-aurora-verde);
     transition: transform 0.3s ease;
 }
 .lista-projetos li:hover{
     transform: scale(1.02);
-    border-left-color: var(--cor-aurora--roxo);
+    border-left-color: var(--cor-aurora-roxo);
 }
 .lista-projetos h3 a{
     color: var(--cor-texto-claro);
@@ -109,10 +110,89 @@ h2{
     margin-bottom: 5px;
 }
 .lista-projetos h3 a:hover{
-    color: var(--cor-aurora--verde);
+    color: var(--cor-aurora-verde);
     text-decoration: underline;
 }
 .lista-projetos p {
     color: var(--cor-destaque-claro);
     font-size: 0.9em;
+}
+.acordeao-container{
+    margin-top: 30px;
+    text-align: left;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.acordeao-item{
+    border: 1px solid var(--cor-destaque-claro);
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #283344;
+}
+
+.acordeao-cabecalho{
+    display: block;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: var(--cor-aurora-azul);
+    color: var(--cor-texto-claro);
+    border-radius: 8px 8px 0 0;
+    transition: background-color 0.3s ease;
+    list-style: none;
+}
+
+.acordeao-cabecalho::-webkit-details-marker,
+.acordeao-cabecalho::marker{
+    display: none;
+}
+.acordeao-cabecalho::before{
+    content: "▼";
+    font-size: 0.8em;
+    margin-right: 10px;
+    color: var(--cor-aurora-verde);
+    transition: transform 0.2s ease;
+}
+.acordeao-item[open] > .acordeao-cabecalho::before{
+    content: "▲";
+    transform: rotate(0deg);
+}
+.acordeao-cabecalho:hover{
+    background-color: #3c5a99;
+}
+.acordeao-conteudo{
+    padding: 10px 20px 20px 20px;
+    border-top: 1px solid var(--cor-destaque-claro);
+}
+.lista-projetos-expandida li{
+    padding: 10px 0;
+    border-bottom: 1px dashed rgba(224, 231, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lista-projetos-expandida li:last-child{
+    border-bottom: none;
+}
+.lista-projetos-expandida h4{
+    margin: 0;
+    font-size: 1.1em;
+    color: var(--cor-texto-claro);
+}
+.lista-projetos-expandida a {
+    color: var(--cor-aurora-verde);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.lista-projetos-expandida a:hover{
+    color: var(--cor-aurora-roxo);
+}
+.marketing-text{
+    font-size: 0.8em;
+    color: var(--cor-destaque-claro);
+    margin: 5px 0 0 0;
+    width: 60%;
 }
